@@ -12,6 +12,4 @@ RUN mkdir -p /etc/supervisor/conf.d
 RUN mkdir -p /var/log/supervisor
 RUN bash -c 'mkdir -p /etc/confd/{conf.d,templates}'
 
-EXPOSE 4001 7001 2379 2380
-
 CMD ["/usr/bin/supervisord"]
